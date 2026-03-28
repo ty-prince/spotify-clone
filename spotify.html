@@ -1,0 +1,127 @@
+<!-- started at 7/9/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="spotify.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <button class="hamburger" id="hamburger-menu">
+      <svg width="30" height="30" viewBox="0 0 100 80" fill="white">
+        <rect width="100" height="15"></rect>
+        <rect y="30" width="100" height="15"></rect>
+        <rect y="60" width="100" height="15"></rect>
+      </svg>
+    </button>
+    <div class="navbar-left">
+      <img src="assets/images/Spotify_Primary_Logo_RGB_Black-300x300.png" alt="Spotify Logo" class="inverte1 logo">
+      <div class="inverte1 home"><img src="assets/images/home.svg" alt="" width="20px" height="30px"></div>
+      <div class="search-bar">
+        <button><img src="assets/images/search.svg" alt="" class="coler inverte7"></button>
+        <input class="search-bar search" type="text" placeholder="What do you want to play?">
+        <button style="border-left: 1px solid white;"><svg class="inverte7" width="100" height="100"
+            viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="30" width="60" height="40" rx="5" ry="5" stroke="black" stroke-width="5" fill="none" />
+            <ellipse cx="50" cy="50" rx="10" ry="6" stroke="black" stroke-width="5" fill="none" />
+            <line x1="30" y1="30" x2="30" y2="15" stroke="black" stroke-width="5" />
+            <line x1="70" y1="30" x2="70" y2="15" stroke="black" stroke-width="5" />
+            <line x1="30" y1="15" x2="70" y2="15" stroke="black" stroke-width="5" />
+          </svg></button>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <div class="left-bar">
+        <a href="#" class="inverte7">Premium</a>
+        <a href="#" class="inverte7">Support</a>
+        <a href="#" class="inverte7">Download</a>
+      </div>
+      |
+      <div class="right-bar">
+        <a href="#" class="inverte7">Install App</a>
+        <a href="#" class="inverte7">Sign up</a>
+        <a class="login-button" href="#">Log in</a>
+      </div>
+      <div class="dot-btn">
+        <button>
+          <img src="assets/images/dot.svg" alt="">
+        </button>
+        <div class="Support">
+          <div><a class="inverte1" href="">Premium</a> <img src="assets/images/share.svg" alt=""></div>
+          <div><a class="inverte1" href="">Support</a> <img src="assets/images/share.svg" alt=""></div>
+          <div><a class="inverte1" href="">Download</a> <img src="assets/images/share.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="left">
+      <div class="library">
+        <div style="font-weight: 700;">Your Library</div>
+        <div class=" inverte1">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+            width="24" focusable="false" aria-hidden="true"
+            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+            <path d="M20 12h-8v8h-1v-8H3v-1h8V3h1v8h8v1z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="Playlist">
+
+      </div>
+      <div class="footer">
+        <ul class="inverte7">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Safety & Privacy Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">About Ads</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+        <a href="#">Cookies</a>
+        <button><svg class="inverte1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+            color="#000000" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="#141B34" stroke-width="1.5" />
+            <path d="M8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2C12 2 8 6 8 12Z" stroke="#141B34"
+              stroke-width="1.5" stroke-linejoin="round" />
+            <path d="M21 15H3" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 9H3" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>English</button>
+      </div>
+    </div>
+    <div class="right">
+      <h2 style="margin-bottom: 15px;">Spotify Playlists</h2>
+      <div class="songs">
+        
+      </div>
+      <div class="seekbar">
+        <div class="control">
+          <div class="playsong"></div>
+          <div class="play-btn">
+            <img id="previous" src="assets/images/previous.svg" alt="" class="inverte1">
+            <img id="play" src="assets/images/play.svg" alt="" class="inverte1">
+            <img id="next" src="assets/images/next.svg" alt="" class="inverte1">
+          </div>
+          <div class="vol-duration">
+            <div class="volume">
+              <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider">
+              <img src="assets/images/vol-on.svg" alt="" class="inverte1">
+            </div>
+            <div class="duration"></div>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="length"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="spotify.js"></script>
+</body>
+
+</html>
