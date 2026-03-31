@@ -35,7 +35,7 @@ async function getsong(folder) {
   songs = []
   for (let index = 0; index < as.length; index++) {
     const element = as[index];
-    if (element.href.endsWith(".mp3")) {
+    if (element.href.endsWith(".mp3") || element.href.endsWith(".m4a")) {
       let url = element.href
       songs.push(url)
     }
